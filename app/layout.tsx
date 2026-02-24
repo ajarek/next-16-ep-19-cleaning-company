@@ -4,6 +4,7 @@ import "./globals.css"
 import Navbar from "@/components/Navbar"
 import AboveNavbar from "@/components/AboveNavbar"
 import { ThemeProvider } from "@/components/ThemeProvider"
+import { Toaster } from "sonner"
 
 
 const robotoFont = Roboto({
@@ -35,6 +36,7 @@ export default function RootLayout({
       <AboveNavbar />
         <Navbar />
         {children}
+        <Toaster />
         </ThemeProvider>
       </body>
     </html>
