@@ -11,6 +11,7 @@ import { Input } from "./ui/input"
 import { Button } from "./ui/button"
 import { useState } from "react"
 import { toast } from "sonner"
+import MotionDiv from "./MotionDiv"
 
 const GetQuote = () => {
   const [regularCleaning, setRegularCleaning] = useState<boolean>(false)
@@ -46,8 +47,9 @@ const GetQuote = () => {
     setCleaningAfterRenovation(false)
   }
   return (
-    <div className='w-full max-w-[400px] absolute top-0 lg:top-1/2 lg:-translate-y-1/2 lg:right-10 right-0 flex flex-col items-start justify-center p-4 text-center bg-background shadow-2xl rounded-lg gap-4'>
-      <h2 className='text-2xl font-bold mb-4'>Uzyskaj bezpłatną wycenę</h2>
+   
+    <MotionDiv className='w-full max-w-[250px] sm:max-w-[400px] absolute top-0 lg:top-1/2 lg:-translate-y-1/2 lg:right-10 right-0 flex flex-col items-start justify-center p-4 text-center bg-background shadow-2xl rounded-lg gap-4'>
+      <h2 className='text-base sm:text-2xl font-bold sm:mb-4 mb-0'>Uzyskaj bezpłatną wycenę</h2>
       <form
         onSubmit={handleSubmit}
         className='w-full flex flex-col items-start gap-4'
@@ -64,7 +66,7 @@ const GetQuote = () => {
               Opcje serwisu *
             </FieldLegend>
 
-            <FieldGroup className='w-full flex flex-row gap-4'>
+            <FieldGroup className='w-full flex flex-row max-sm:flex-col gap-4'>
               <div className='w-full flex flex-col gap-4'>
                 <Field orientation='horizontal'>
                   <Checkbox
@@ -76,7 +78,7 @@ const GetQuote = () => {
                   />
                   <FieldLabel
                     htmlFor='regular-cleaning'
-                    className='font-normal'
+                    className='font-normal cursor-pointer'
                   >
                     Regularne czyszczenie
                   </FieldLabel>
@@ -91,7 +93,7 @@ const GetQuote = () => {
                   />
                   <FieldLabel
                     htmlFor='move-in-move-out'
-                    className='text-left font-normal'
+                    className='text-left font-normal cursor-pointer'
                   >
                     Wprowadzanie się / Wyprowadzanie się
                   </FieldLabel>
@@ -108,7 +110,7 @@ const GetQuote = () => {
                   />
                   <FieldLabel
                     htmlFor='ecological-cleaning'
-                    className='font-normal'
+                    className='font-normal cursor-pointer'
                   >
                     Ekologiczne czyszczenie
                   </FieldLabel>
@@ -123,7 +125,7 @@ const GetQuote = () => {
                     checked={deepCleaning}
                     onCheckedChange={() => setDeepCleaning(!deepCleaning)}
                   />
-                  <FieldLabel htmlFor='deep-cleaning' className='font-normal'>
+                  <FieldLabel htmlFor='deep-cleaning' className='font-normal cursor-pointer'>
                     Głębokie czyszczenie
                   </FieldLabel>
                 </Field>
@@ -139,7 +141,7 @@ const GetQuote = () => {
                   />
                   <FieldLabel
                     htmlFor='removal-and-storage'
-                    className='text-left font-normal'
+                    className='text-left font-normal cursor-pointer'
                   >
                     Usuwanie i przechowywanie
                   </FieldLabel>
@@ -156,7 +158,7 @@ const GetQuote = () => {
                   />
                   <FieldLabel
                     htmlFor='cleaning-after-renovation'
-                    className='font-normal'
+                    className='font-normal cursor-pointer'
                   >
                     Sprzątanie po remoncie
                   </FieldLabel>
@@ -169,7 +171,8 @@ const GetQuote = () => {
           Wyślij zapytanie
         </Button>
       </form>
-    </div>
+    </MotionDiv>
+    
   )
 }
 

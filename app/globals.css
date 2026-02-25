@@ -45,6 +45,16 @@
   --radius-2xl: calc(var(--radius) + 8px);
   --radius-3xl: calc(var(--radius) + 12px);
   --radius-4xl: calc(var(--radius) + 16px);
+    --animate-marquee: marquee 60s linear infinite;
+
+  @keyframes marquee {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
 }
 
 :root {
@@ -64,7 +74,7 @@
   --accent-foreground: oklch(0.205 0 0);
   --destructive: oklch(0.58 0.22 27);
   --border: oklch(0.922 0 0);
-  --input: oklch(0.922 0 0);
+  --input: oklch(56.595% 0.0049 16.581);
   --ring: oklch(0.708 0 0);
   --chart-1: oklch(0.83 0.10 230);
   --chart-2: oklch(0.75 0.14 233);
@@ -99,7 +109,7 @@
   --accent-foreground: oklch(0.985 0 0);
   --destructive: oklch(0.704 0.191 22.216);
   --border: oklch(1 0 0 / 10%);
-  --input: oklch(1 0 0 / 15%);
+  --input: oklch(91.623% 0.01312 16.96 / 0.15);
   --ring: oklch(0.556 0 0);
   --chart-1: oklch(0.83 0.10 230);
   --chart-2: oklch(0.75 0.14 233);

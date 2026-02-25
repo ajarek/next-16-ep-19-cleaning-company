@@ -3,6 +3,7 @@ import { Button } from "./ui/button"
 import Image from "next/image"
 import { BrushCleaning } from "lucide-react"
 import GetQuote from "./GetQuote"
+import TextType from "./TextType"
 
 
 const Header = () => {
@@ -15,12 +16,21 @@ const Header = () => {
         className='absolute inset-0 w-full h-full object-cover object-center'
       />
      
-      <div className='absolute bottom-0 left-0  flex flex-col items-center justify-center gap-4 text-center mb-8'>
-        <h1 className='text-xl md:text-2xl lg:text-3xl font-semibold text-white max-w-3xl tracking-tight'>
-         Zaufane usługi sprzątania domów
-          
-        </h1>
-        <p className='text-base md:text-lg lg:text-xl text-white/90   w-full md:w-2xl lg:w-3xl leading-relaxed'>
+      <div className='absolute bottom-0 left-0 max-sm:left-1/2 max-sm:-translate-x-1/2 flex flex-col items-center justify-center gap-4 text-center mb-8'>
+        <TextType
+          text={["Zaufane usługi sprzątania domów"]}
+          typingSpeed={75}
+          pauseDuration={1500}
+          showCursor
+          cursorCharacter='_'
+          deletingSpeed={50}
+          variableSpeedEnabled={false}
+          variableSpeedMin={60}
+          variableSpeedMax={120}
+          cursorBlinkDuration={0.5}
+          className='max-sm:text-xl text-4xl text-center font-bold text-white'
+        />
+        <p className='max-sm:hidden text-base md:text-lg lg:text-xl text-white/90   w-full md:w-2xl lg:w-3xl leading-relaxed'>
          Ciesz się nieskazitelnym domem dzięki naszym profesjonalnym usługom sprzątania. Zarezerwuj już teraz, aby cieszyć się czystszą i świeższą przestrzenią życiową.
         </p>
         <Button
