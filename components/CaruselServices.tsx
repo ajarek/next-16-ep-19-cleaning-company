@@ -11,6 +11,7 @@ import { servicesData } from "@/data/servicesData";
 import Image from "next/image";
 import { Button } from "./ui/button";
 import { MoveRight } from "lucide-react";
+import Link from "next/link";
 
 export function CarouselServices() {
   return (
@@ -30,7 +31,11 @@ export function CarouselServices() {
                 <CardTitle className="text-2xl font-semibold">{service.name}</CardTitle>
                 </CardHeader>
                 <CardFooter className="w-full flex items-end justify-end">
-                    <Button className="w-fit h-12 flex items-center text-xl gap-2 px-8 cursor-pointer">Dowiedz się więcej<MoveRight className="size-5" /></Button>
+                    <Button asChild className="w-fit h-12 flex items-center text-xl gap-2 px-8 cursor-pointer">
+                      <Link href={`/service-id/${service.id}`}>
+                      Dowiedz się więcej<MoveRight className="size-5" />
+                      </Link>
+                      </Button>
                 </CardFooter>
               </Card>
             </div>

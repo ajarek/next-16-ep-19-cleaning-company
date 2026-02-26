@@ -69,7 +69,7 @@ export const servicesData = [
   },
   {
     id: 3,
-    name: "Wprowadzanie/Wyprowadzanie",
+    name: "Przeprowadzki",
     description: "Nasza usługa sprzątania przed i po przeprowadzce to kompleksowe czyszczenie, które zapewnia, że Twój dom jest nieskazitelny, gdy się wprowadzasz lub wyprowadzasz. Obejmuje gruntowne czyszczenie wszystkich pomieszczeń, w tym kuchni, łazienek, salonów i sypialni. Pomagamy Ci stworzyć czyste i zachęcające środowisko, niezależnie od tego, czy zaczynasz nowy rozdział, czy kończysz poprzedni.",
     characteristics: [
       "Obejmuje trudno dostępne miejsca i przestrzenie pod meblami.",
