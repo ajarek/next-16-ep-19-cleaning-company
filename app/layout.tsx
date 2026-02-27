@@ -5,6 +5,7 @@ import Navbar from "@/components/Navbar"
 import AboveNavbar from "@/components/AboveNavbar"
 import { ThemeProvider } from "@/components/ThemeProvider"
 import { Toaster } from "sonner"
+import Footer from "@/components/Footer"
 
 
 const robotoFont = Roboto({
@@ -37,6 +38,7 @@ export default function RootLayout({
         <Navbar />
         {children}
         <Toaster />
+        <Footer />
         </ThemeProvider>
       </body>
     </html>

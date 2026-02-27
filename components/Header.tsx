@@ -8,7 +8,7 @@ import TextType from "./TextType"
 
 const Header = () => {
   return (
-    <div className='relative w-full h-[620px]   overflow-hidden '>
+    <div  className='relative w-full h-[620px]   overflow-hidden '>
       <Image
         src="/banner-img.jpg"
         alt="Header Background"

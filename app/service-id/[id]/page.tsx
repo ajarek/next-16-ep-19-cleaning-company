@@ -22,7 +22,7 @@ const ServiceId = async ({params}: {params: Promise<{id: string}>}) => {
         ))}</p>
 
         <div className='flex gap-4'>
-          <p className='text-2xl font-bold line-through'>{serviceDetails?.price}zł</p>
+          <p className='text-2xl font-bold line-through text-gray-500'>{serviceDetails?.price}zł</p>
           <p className='text-2xl font-bold'>{serviceDetails?.discountedPrice}zł</p>
         </div>
           <button className='bg-primary text-white px-4 py-2 rounded-md'>Zarezerwuj teraz</button>
