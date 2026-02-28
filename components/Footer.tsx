@@ -36,7 +36,7 @@ const Footer = () => {
               />
               <Button
                 type='submit'
-                className='bg-primary hover:bg-primary/90 text-primary-foreground h-14 md:h-16 rounded-l-none px-6 md:px-8 font-semibold text-base transition-all'
+                className='bg-primary hover:bg-primary/90 text-primary-foreground h-14 md:h-16 rounded-l-none px-6 md:px-8 font-semibold text-base transition-all cursor-pointer'
               >
                 Subskrybować
               </Button>

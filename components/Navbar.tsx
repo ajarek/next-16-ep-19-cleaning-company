@@ -49,11 +49,10 @@ const Navbar = () => {
           <Phone className="size-6" />
           (+48) 500 500 500
         </Button>
-        <Button variant='outline' className='bg-secondary text-secondary-foreground h-9 text-lg cursor-pointer border-primary'>
+        <Button asChild variant='outline' className='bg-secondary text-secondary-foreground h-9 text-lg cursor-pointer border-primary'>
+         <Link href='/contact'>
          Zarezerwuj Usługę
-        </Button>
-        <Button className='bg-primary text-primary-foreground h-9 text-lg cursor-pointer'>
-         Zaloguj się /Zarejestruj się
+         </Link>
         </Button>
       </div>
       <SheetNav />

@@ -76,12 +76,7 @@ export function SheetNav() {
                 Wielkopolska, Kołobrzeg
               </span>
             </Button>
-            <div className="flex gap-4">
-            <Instagram />
-            <Facebook />
-            <Linkedin />
-            <ModeToggle />
-            </div>
+           
           </div>
         </div>
         <SheetFooter>

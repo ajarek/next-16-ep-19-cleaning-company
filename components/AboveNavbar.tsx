@@ -4,8 +4,8 @@ import { Facebook, Instagram, Linkedin, Mail, MapPinCheckInside } from 'lucide-r
 
 const AboveNavbar = () => {
   return (
-    <div id="above-navbar" className="flex items-center justify-between h-14 bg-primary/50 text-secondary-foreground px-10 max-lg:hidden">
-        <div className="flex gap-8 lg:gap-12">
+    <div id="above-navbar" className="flex items-center justify-between h-14 bg-primary/50 text-secondary-foreground px-10 ">
+        <div className="flex gap-8 lg:gap-12 max-lg:hidden">
             <Button variant={'outline'}>
                 <Mail/>
                 <span className=" text-sm font-semibold cursor-pointer">perfect_clean@onet.pl</span>
