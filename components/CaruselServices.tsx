@@ -23,11 +23,13 @@ export function CarouselServices() {
     <Carousel className="w-full max-w-7xl">
       <CarouselContent className="-ml-1">
         {servicesData.map((service) => (
-          <CarouselItem key={service.id} className="basis-1/2 pl-1 lg:basis-1/3">
-            <div className="p-1 ">
-              <Card className="h-[400px] flex flex-col justify-between ">
+          <CarouselItem key={service.id} className="max-sm:max-w-full basis-1/2 pl-1 lg:basis-1/3">
+            <div className="p-1 max-sm:max-w-full">
+              <Card className="max-sm:max-w-full h-[450px] flex flex-col justify-between ">
                 <CardHeader>
-                <Image src={service.image} alt={service.name} width={750} height={500} />
+                  <div className="relative w-full max-sm:max-w-full h-[300px] overflow-hidden rounded-md">
+                <Image src={service.image} alt={service.name} fill className="object-cover" />
+                </div>
                 <CardTitle className="text-2xl font-semibold">{service.name}</CardTitle>
                 </CardHeader>
                 <CardFooter className="w-full flex items-end justify-end">

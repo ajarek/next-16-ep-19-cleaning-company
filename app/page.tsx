@@ -8,9 +8,9 @@ import { Button } from "@/components/ui/button"
 import { ChevronUp } from "lucide-react"
 export default function Page() {
   return (
-    <main className='relative flex flex-col items-center justify-center gap-4'>
+    <main className='relative flex flex-col items-center justify-center '>
       <Header />
-      <Marquee />
+    <Marquee />
       <CarouselServices />
       <HomeInfo1 />
       <HomeInfo2 />

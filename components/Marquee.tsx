@@ -10,7 +10,7 @@ const Marquee = () => {
   ]
 
   return (
-    <div className='relative flex py-2 overflow-x-hidden bg-primary/50 border-y border-black/5'>
+    <div className='w-full relative flex py-2 overflow-x-hidden bg-primary/50 border-y border-black/5'>
       <div className='flex animate-marquee whitespace-nowrap gap-10'>
         {/* First set of items */}
         {marqueeItems.map((item) => (
